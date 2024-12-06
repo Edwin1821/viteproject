@@ -8,7 +8,7 @@ import UpdateForm from './components/UpdateForm';
 
 const Routes = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/viteproject' element={<RootLayout/>}>
+    <Route path='/' element={<RootLayout/>}>
        <Route path='create' element={<FormSubmit/>}/>
        <Route path='read' element={<ReadForm/>}/>
        <Route path='/update/:id' element={<UpdateForm/>}/>
