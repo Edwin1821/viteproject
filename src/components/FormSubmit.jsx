@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function FormSubmit() {
 
@@ -9,8 +10,7 @@ function FormSubmit() {
   const [phone,setPhone] = useState("");
   const [loading,setLocation] = useState(false);
   
-
-  
+  const navigate = useNavigate();
 
   async function sendUserData() {
     setLocation(true);
@@ -28,6 +28,7 @@ function FormSubmit() {
       console.log(e)
     }finally{
       setLocation(false);
+      navigate("/read")
     }      
   };
 
