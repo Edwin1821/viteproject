@@ -15,7 +15,7 @@ const Routes = createBrowserRouter(
     <Route path="/viteproject" element={<RootLayout />}>
       <Route path="create" element={<FormSubmit />} />
       <Route path="read" element={<ReadForm />} />
-      <Route path="/update/:id" element={<UpdateForm />} />
+      <Route path="update/:id" element={<UpdateForm />} />
     </Route>
   )
 );
